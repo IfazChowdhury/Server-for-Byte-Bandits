@@ -63,7 +63,7 @@ async def get_drone_position():
 async def post_drone_position(coords: db.DroneCommand = Body(...)):
     global drone_position
     drone_position = coords
-    # print(f"[+] Drone Position: {drone_position}")
+     print(f"[+] Drone Position: {drone_position}")
     return {"message": "Drone Position Recieved"}
  
 
