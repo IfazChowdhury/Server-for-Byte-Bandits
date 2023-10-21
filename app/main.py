@@ -2,7 +2,7 @@ from typing import Optional
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.params import Body
 # from app import db
-import db
+from . import db
 
 
 app = FastAPI()
